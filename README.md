@@ -1,0 +1,1 @@
+the reason O(n^2) is much slower than O(n) is because it grows much faster on larger input sizes,for example a input size of 1000 will be 1000 in O(n) but it will be 1000000 in O(n^2) thus making it much slower to operate
