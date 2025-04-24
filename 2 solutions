@@ -1,0 +1,24 @@
+#option 1 O(n²)
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                if i == j:
+                    continue
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+        return []
+#option 2 O(n)
+target,n=map(int,input().split())
+a=list(map(int,input().split())
+cc=dict()
+for i in range(len(a)):
+  x=a[i]
+  y=target-x
+  cc[x]=i
+for j in range(len(a)):
+  y=a[j]
+  x=target-y
+  if x in cc:
+    print(j,cc[x])
+    
